@@ -12,11 +12,11 @@ public class MyException extends Exception {
     }
 
     public String getDangerLevel() {
-        return "РСЃРєР»СЋС‡РµРЅРёРµ Р±РµР·РѕРїР°СЃРЅРѕ";
+        return "Исключение безопасно";
     }
 
     public String toString(){
-        return "Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ MyException\n РЈСЂРѕРІРµРЅСЊ РѕРїР°СЃРЅРѕСЃС‚Рё: " + getDangerLevel();
+        return "Вызвано исключение MyException, Уровень опасности: " + getDangerLevel();
     }
 
 }

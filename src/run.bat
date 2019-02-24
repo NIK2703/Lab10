@@ -1,4 +1,6 @@
-javac -encoding Cp866 -d bin Main.java
 javac Main.java
+
+chcp 1251
+
 java Main
 pause
