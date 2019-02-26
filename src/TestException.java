@@ -8,29 +8,29 @@ public class TestException {
     }
 
     void one() {
-        System.out.println("Метод one()");
+        System.out.println("РњРµС‚РѕРґ one()");
         try {
             int a = 0;
             int b = 1 / a;
         }
         catch (ArithmeticException e) {
-            System.out.println("Сгенерировано исключение деление на ноль.");
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ РґРµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ.");
         }
     }
 
      void two() {
-         System.out.println("Метод two()");
+         System.out.println("РњРµС‚РѕРґ two()");
         try {
             int a[] = {1,2,3};
             int b = a[3];
         }
         catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Сгенерировано исключение: " + e);
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ: " + e);
         }
     }
 
      void three(int exceptionType) {
-         System.out.println("Метод three() с аргументом " + exceptionType);
+         System.out.println("РњРµС‚РѕРґ three() СЃ РїР°СЂР°РјРµС‚СЂРѕРј " + exceptionType);
         try {
             switch (exceptionType) {
                 case 0:
@@ -42,23 +42,23 @@ public class TestException {
             }
         }
         catch (NullPointerException e) {
-            System.out.println("Сгенерировано исключение: " + e);
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ: " + e);
         }
         catch (ArithmeticException e) {
-            System.out.println("Сгенерировано исключение: " + e);
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ: " + e);
         }
         catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Сгенерировано исключение: " + e);
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ: " + e);
         }
 
     }
 
      void four() {
-         System.out.println("Метод four()");
+         System.out.println("РњРµС‚РѕРґ four()");
         try {
             throw new MyException();
         }catch (MyException e) {
-            System.out.println("Сгенерировано исключение: " + e);
+            System.out.println("Р’С‹Р·РІР°РЅРѕ РёСЃРєР»СЋС‡РµРЅРёРµ: " + e);
         }
     }
 
