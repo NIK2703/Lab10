@@ -19,7 +19,7 @@ public class TestException {
     }
 
      void two() {
-         System.out.println("Метод two()");
+        System.out.println("Метод two()");
         try {
             int a[] = {1,2,3};
             int b = a[3];
@@ -30,7 +30,7 @@ public class TestException {
     }
 
      void three(int exceptionType) {
-         System.out.println("Метод three() с параметром " + exceptionType);
+        System.out.println("Метод three() с параметром " + exceptionType);
         try {
             switch (exceptionType) {
                 case 0:
@@ -54,10 +54,11 @@ public class TestException {
     }
 
      void four() {
-         System.out.println("Метод four()");
+        System.out.println("Метод four()");
         try {
             throw new MyException();
-        }catch (MyException e) {
+        }
+        catch (MyException e) {
             System.out.println("Вызвано исключение: " + e);
         }
     }
